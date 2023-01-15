@@ -1,0 +1,816 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+/* 
+  Template Name: Xenon | Personal portfolio website.
+  Author: Ami
+  Vertion: 1.0
+
+  Table of contents
+  ----
+  01.COMMON CSS
+  02.Preloder CSS
+  03.HEADER CSS
+  04.BANNAR CSS
+  05.ABOUT CSS
+  06.SERVICE CSS
+  07.PROJECT CSS
+  08.COUNTER CSS
+  09.TIMELINE CSS
+  10.TESTIMONIAL CSS
+  11.PRICE CSS
+  12.TEAM CSS
+  13.BLOG CSS
+  14.CTA CSS
+  15.CONTACT CSS
+  16.FOOTER CSS
+  17.SCROLL TO TOP CSS
+*/
+
+/* 01.COMMON CSS */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
+
+body {
+	font-family: 'Poppins', sans-serif;
+	font-size: 16px;
+	line-height: 24px;
+	color: #333;
+}
+
+.pt-100 {
+	padding-top: 100px;
+}
+
+.pb-100 {
+	padding-bottom: 100px;
+}
+
+/* 02.Preloder CSS */
+.preloder {
+	position: absolute;
+	z-index: 99;
+	width: 100%;
+	height: 100%;
+	background-color: #fff;
+}
+
+.preloder img {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	    -ms-transform: translate(-50%, -50%);
+	        transform: translate(-50%, -50%);
+}
+
+/* 03.HEADER CSS */
+.header-area {
+	padding: 5px 0;
+	position: absolute;
+	z-index: 9;
+	left: 0;
+	right: 0;
+	-webkit-transition: .3s;
+	-o-transition: .3s;
+	transition: .3s;
+}
+
+.navbar-brand {
+	text-transform: uppercase;
+	font-weight: 700;
+	padding: 10px 20px;
+	border: 1px solid #fff;
+	font-size: 24px;
+	color: #fff;
+}
+
+.navbar-brand:focus, .navbar-brand:hover {
+	color: #ff3636;
+}
+
+.navbar-nav li a {
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 14px;
+	font-weight: 600;
+	padding: 0 11px !important;
+	-webkit-transition: .3s;
+	-o-transition: .3s;
+	transition: .3s;
+}
+
+.navbar-nav li a:hover {
+	color: #ff3636;
+}
+
+.navbar-nav .nav-link.active, .navbar-nav .show > .nav-link {
+	color: #ff3636;
+}
+
+.header-area.fixed {
+	position: fixed;
+	z-index: 99;
+	background-color: #fff;
+	padding: 0;
+	left: 0;
+	right: 0;
+	border-bottom: 1px solid #ddd;
+}
+
+.header-area.fixed a {
+	color: #333;
+}
+
+.header-area.fixed .navbar-brand {
+	border-color: #333;
+}
+
+.header-area.fixed .navbar-nav li a.active {
+	color: #ff3636;
+}
+
+/* 04.BANNAR CSS */
+.bannar-area {
+	background-size: cover;
+	background-position: center;
+	position: relative;
+	z-index: 2;
+	height: 100vh;
+}
+
+.bannar-area:before {
+	position: absolute;
+	content: "";
+	background: #333;
+	width: 100%;
+	height: 100%;
+	opacity: 0.5;
+	z-index: -1;
+}
+
+.bannar h1 {
+	text-transform: capitalize;
+	font-weight: 700;
+	font-size: 70px;
+}
+
+.bannar h5 {
+	text-transform: capitalize;
+}
+
+.btn-box {
+	background-color: #ff3636;
+	color: #fff;
+	text-decoration: none;
+	text-transform: uppercase;
+	display: inline-block;
+	padding: 10px 30px;
+	font-weight: 600;
+	font-size: 18px;
+	-webkit-transition: .5s;
+	-o-transition: .5s;
+	transition: .5s;
+}
+
+.bannar a {
+	margin-top: 15px;
+}
+
+.btn-box:hover {
+	color: #fff;
+	background-color: #333;
+}
+
+/* 05.ABOUT CSS */
+.about-content h3 {
+	color: #ff3636;
+	text-transform: capitalize;
+	font-size: 36px;
+	font-weight: 600;
+	line-height: 26px;
+}
+
+.about-content h5 {
+	text-transform: capitalize;
+	margin-bottom: 20px;
+}
+
+.about-content ul {
+	width: 30%;
+	float: left;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	margin-bottom: 25px;
+}
+
+.about-content ul li {
+	text-transform: capitalize;
+	margin: 5px 0;
+}
+
+.about-content ul li i {
+	font-size: 13px;
+	padding-right: 5px;
+}
+
+/* 06.SERVICE CSS */
+
+.service-area {
+	background-color: #f6f6f6;
+}
+
+.section-title h4 {
+	text-transform: capitalize;
+	font-size: 36px;
+	font-weight: 600;
+	position: relative;
+	padding-bottom: 10px;
+}
+
+.section-title h4:before {
+	position: absolute;
+	background-color: #ff3636;
+	content: "";
+	width: 60px;
+	height: 2px;
+	left: 50%;
+	bottom: -5px;
+	-webkit-transform: translate(-50%, -50%);
+	    -ms-transform: translate(-50%, -50%);
+	        transform: translate(-50%, -50%);
+}
+
+.section-title h4::after {
+	position: absolute;
+	content: "";
+	background-color: #ff3636;
+	width: 10px;
+	height: 10px;
+	bottom: -8px;
+	left: 50%;
+	-webkit-transform: translateX(-50%);
+	    -ms-transform: translateX(-50%);
+	        transform: translateX(-50%);
+}
+
+.section-title {
+	margin-bottom: 60px;
+}
+
+.single-service {
+	text-align: center;
+	background-color: #fff;
+	padding: 30px;
+	border: 1px solid #ddd;
+	margin-bottom: 26px;
+}
+
+.single-service i {
+	background-color: #ff3636;
+	width: 60px;
+	height: 60px;
+	line-height: 60px;
+	font-size: 20px;
+	color: #fff;
+	-webkit-transition: 0.3s;
+	-o-transition: 0.3s;
+	transition: 0.3s;
+}
+
+.single-service h4 {
+	text-transform: capitalize;
+	margin: 20px 0 15px;
+	font-size: 26px;
+	font-weight: 500;
+}
+
+.single-service:hover i {
+	border-radius: 50%;
+}
+
+/* 07.PROJECT CSS */
+
+.single-project {
+	position: relative;
+}
+
+.single-project:hover .project-overlay {
+	visibility: visible;
+	opacity: 1;
+	-webkit-transform: scale(1);
+	    -ms-transform: scale(1);
+	        transform: scale(1);
+}
+
+.project-overlay {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 2;
+	visibility: hidden;
+	opacity: 0;
+	-webkit-transition: .3s;
+	-o-transition: .3s;
+	transition: .3s;
+	-webkit-transform: scale(0);
+	    -ms-transform: scale(0);
+	        transform: scale(0);
+}
+
+.project-overlay:before {
+	position: absolute;
+	content: "";
+	width: 100%;
+	height: 100%;
+	background-color: #333;
+	opacity: .8;
+	z-index: -1;
+}
+
+.project-content {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	width: 100%;
+	text-align: center;
+	-webkit-transform: translate(-50%, -50%);
+	    -ms-transform: translate(-50%, -50%);
+	        transform: translate(-50%, -50%);
+}
+
+.project-content a {
+	color: #fff;
+	border: 1px solid #fff;
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
+	border-radius: 50%;
+	margin: 0 5px;
+	-webkit-transition: .3s;
+	-o-transition: .3s;
+	transition: .3s;
+}
+
+.project-content a:hover {
+	background-color: #ff3636;
+	border-color: #ff3636;
+}
+
+.project-content h4 {
+	text-transform: capitalize;
+	color: #fff;
+	font-size: 24px;
+	font-weight: 600;
+	margin-top: 10px;
+}
+
+.project-content h4 span {
+	display: block;
+	font-size: 16px;
+	font-style: italic;
+	text-transform: lowercase;
+	margin-top: 5px;
+	font-weight: 400;
+}
+
+/* 08.COUNTER CSS */
+
+.counter-area {
+	background-color: #000;
+	color: #fff;
+}
+
+.single-counter i {
+	background-color: #ff3636;
+	width: 60px;
+	height: 60px;
+	line-height: 60px;
+	font-size: 23px;
+}
+
+.single-counter h4 {
+	margin-top: 15px;
+	font-weight: 600;
+	font-size: 40px;
+}
+
+.single-counter p {
+	text-transform: capitalize;
+	font-size: 20px;
+	font-weight: 500;
+}
+
+/* 09.TIMELINE CSS */
+
+.timeline-list {
+	position: relative;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.timeline-list:after {
+	position: absolute;
+	content: "";
+	width: 2px;
+	height: 100%;
+	background-color: #ff3636;
+	left: 50%;
+	top: 0;
+	-webkit-transform: translateX(-50%);
+	    -ms-transform: translateX(-50%);
+	        transform: translateX(-50%);
+}
+
+.timeline-list li .timeline-content {
+	width: 40%;
+	border: 2px solid #ff3636;
+	padding: 10px;
+	text-align: right;
+}
+
+.timeline-list li .timeline-content span {
+	display: block;
+	color: #ff3636;
+	font-size: 20px;
+	font-weight: 600;
+}
+
+.timeline-list li .timeline-content h4 {
+	text-transform: capitalize;
+	font-size: 25px;
+	font-weight: 600;
+	margin: 10px 0;
+}
+
+.timeline-list li {
+	clear: both;
+	display: flow-root;
+	position: relative;
+}
+
+.timeline-list li:nth-child(2n) .timeline-content {
+	float: right;
+	text-align: left;
+}
+
+.timeline-list li:after {
+	position: absolute;
+	content: "";
+	background-color: #ff3636;
+	width: 20px;
+	height: 20px;
+	left: 50%;
+	top: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	    -ms-transform: translate(-50%, -50%);
+	        transform: translate(-50%, -50%);
+	border-radius: 50%;
+}
+
+/* 10.TESTIMONIAL CSS */
+
+.testimonial-area {
+	background-color: #000;
+	color: #fff;
+}
+
+.single-testimonial {
+	text-align: center;
+}
+
+.single-testimonial img {
+	border-radius: 50%;
+	width: 200px !important;
+	height: 200px;
+	margin: 0 auto;
+}
+
+.single-testimonial p {
+	max-width: 800px;
+	margin: 20px auto;
+}
+
+.client-info h4 {
+	text-transform: capitalize;
+	font-weight: 600;
+}
+
+.client-info h4 span {
+	display: block;
+	font-size: 16px;
+	font-weight: 400;
+	margin-top: 5px;
+}
+
+
+.testimonial .owl-dots button {
+	width: 15px;
+	height: 15px;
+	background-color: #fff !important;
+	border-radius: 50%;
+	margin: 0 4px;
+	display: inline-block;
+}
+
+.testimonial .owl-dots button.active {
+	background-color: #ff3636 !important;
+}
+
+.testimonial .owl-dots {
+	text-align: center;
+	margin-top: 15px;
+}
+
+/* 11.PRICE CSS */
+
+.price-area {
+	background-color: #f4f4f4;
+}
+
+.single-price {
+	text-align: center;
+	background-color: #fff;
+	padding: 20px 30px;
+}
+
+.single-price h5 {
+	text-transform: uppercase;
+	font-size: 24px;
+	font-weight: 600;
+}
+
+.single-price h2 {
+	margin: 20px 0;
+	background-color: #f4f4f4;
+	padding: 10px;
+	font-size: 40px;
+	font-weight: 700;
+}
+
+.single-price ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.single-price ul li {
+	border-bottom: 1px dashed #DDD;
+	padding-bottom: 10px;
+	margin-bottom: 10px;
+	text-transform: capitalize;
+}
+
+.single-price ul li:last-child {
+	border-bottom: none;
+}
+
+.single-price.active {
+	border: 3px solid #ff3636;
+}
+
+.single-price.active h2 {
+	background-color: #ff3636;
+	color: #fff;
+}
+
+/* 12.TEAM CSS */
+
+.single-team img {
+	width: 100%;
+	height: 100%;
+}
+
+.single-team {
+	position: relative;
+	overflow: hidden;
+}
+
+.team-content {
+	text-align: center;
+	background-color: #333;
+	color: #fff;
+	padding: 20px 0;
+	position: absolute;
+	left: 0;
+	bottom: -122px;
+	width: 100%;
+	-webkit-transition: .3s;
+	-o-transition: .3s;
+	transition: .3s;
+}
+
+.team-content h4 {
+	text-transform: capitalize;
+	font-size: 26px;
+	font-weight: 600;
+}
+
+.team-content h4 span {
+	display: block;
+	font-size: 16px;
+	font-weight: 400;
+}
+
+.team-content a {
+	color: #fff;
+	margin: 0 5px;
+	-webkit-transition: .3s;
+	-o-transition: .3s;
+	transition: .3s;
+}
+
+.team-content a:hover {
+	color: #ff3636;
+}
+
+.single-team:hover .team-content {
+	bottom: 0;
+}
+
+/* 13.BLOG CSS */
+
+.blog-area {
+	background-color: #f4f4f4;
+}
+
+.blog-img {
+	width: 100%;
+	height: 300px;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.blog-img {
+	width: 100%;
+	height: 300px;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.blog-meta {
+	text-align: center;
+	background-color: #fff;
+	padding: 10px 0;
+	margin: -25px 25px 0;
+	border: 1px solid #ddd;
+}
+
+.blog-meta a {
+	text-decoration: none;
+	margin: 0 5px;
+	color: #000;
+	-webkit-transition: .3s;
+	-o-transition: .3s;
+	transition: .3s;
+}
+
+.blog-meta a:hover {
+	color: #ff3636;
+}
+
+.single-blog {
+	background-color: #fff;
+	padding: 10px;
+	border: 1px solid #ddd;
+}
+
+.single-blog h4 a {
+	display: block;
+	text-decoration: none;
+	text-transform: capitalize;
+	color: #333;
+	margin: 15px 0;
+	-webkit-transition: .3s;
+	-o-transition: .3s;
+	transition: .3s;
+}
+
+.single-blog h4 a:hover {
+	color: #ff3636;
+}
+
+/* 14.CTA CSS */
+
+.cta-area {
+	background-color: #6a3131;
+	color: #fff;
+}
+
+.single-cta h2 {
+	text-transform: uppercase;
+	font-size: 40px;
+	font-weight: 600;
+	word-spacing: 5px;
+}
+
+.single-cta p {
+	margin: 20px 0;
+}
+
+/* 15.CONTACT CSS */
+
+.contact-form h4 {
+	text-transform: capitalize;
+	font-size: 20px;
+	margin-bottom: 15px;
+}
+
+.contact-form input[type="submit"] {
+	background-color: #ff3636;
+	color: #fff;
+	text-transform: uppercase;
+	font-weight: 600;
+}
+
+.single-contact i {
+	background-color: #ff3636;
+	width: 40px;
+	height: 40px;
+	text-align: center;
+	line-height: 40px;
+	margin-right: 20px;
+	color: #fff;
+	border-radius: 50%;
+	font-size: 20px;
+}
+
+.single-contact h4 {
+	text-transform: uppercase;
+	font-weight: 600;
+	font-size: 22px;
+}
+
+.single-contact h4 span {
+	display: block;
+	font-size: 16px;
+	text-transform: capitalize;
+	margin-top: 5px;
+}
+
+.single-contact {
+	margin-bottom: 20px;
+}
+
+/* 16.FOOTER CSS */
+
+.footer-area {
+	background-color: #333;
+	color: #fff;
+	padding: 50px 0;
+}
+
+.footer-area h2 {
+	text-transform: uppercase;
+	font-size: 36px;
+	font-weight: 600;
+	letter-spacing: 3px;
+	margin-bottom: 15PX;
+}
+
+.footer-area a {
+	color: #fff;
+	margin: 0 5px;
+	-webkit-transition: .3s;
+	-o-transition: .3s;
+	transition: .3s;
+	font-size: 20px;
+}
+
+.footer-area a:hover {
+	color: #ff3636;
+}
+
+.footer-area p {
+	text-transform: capitalize;
+	border-top: 1px solid #ddd;
+	margin-top: 30px;
+	padding-top: 25px;
+}
+
+/* 17.SCROLL TO TOP CSS */
+
+#scrolltop {
+	position: fixed;
+	right: 20px;
+	bottom: 20px;
+	background-color: #ff3636;
+	z-index: 99;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 50px;
+	color: #fff;
+	font-size: 25px;
+}
